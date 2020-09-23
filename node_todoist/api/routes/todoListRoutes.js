@@ -13,6 +13,6 @@ module.exports = function(app) {
     .put(todoList.update_a_task)
     .delete(todoList.delete_a_task);
 
-  // app.route('/tasks/status/:status')
-  //   .get(todoList.read_by_status)
+  app.route('/tasks/status/:status')
+    .get(todoList.read_by_status)
 };
